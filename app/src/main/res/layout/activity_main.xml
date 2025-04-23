@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <TextView
+            android:id="@+id/statisticsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Всего примеров: 0\nПравильно: 0\nНеправильно: 0\nПроцент: 0.00%"
+            android:textColor="#333333"
+            android:textSize="24sp"
+            android:lineSpacingExtra="4dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/exampleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/exampleText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:textColor="#333333"
+                android:contentDescription="Math problem" />
+
+            <EditText
+                android:id="@+id/answerInput"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Введите число"
+                android:inputType="number"
+                android:minWidth="100dp"
+                android:paddingHorizontal="12dp"
+                android:textColor="#333333"
+                android:textColorHint="#999999"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="8dp">
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_background"
+            android:text="СТАРТ"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:stateListAnimator="@null" />
+
+        <Button
+            android:id="@+id/checkButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/button_background"
+            android:text="ПРОВЕРКА"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:enabled="false"
+            android:stateListAnimator="@null" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MathApp" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Настройте тему здесь, если нужно -->
+    </style>
+</resources>
